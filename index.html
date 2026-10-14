@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POKÉDEX</title>
 </head>
 <body>
     <main>
@@ -13,6 +13,7 @@
              id="nome"
              placeholder="Digite o nome do Pokémon!">
             <button type="button" id="buscar">Buscar</button>
+
         </section>
         <section class="principal">
             <div class="card">
@@ -23,6 +24,10 @@
                 <p>Peso: <span id="pokemon-peso"></span></p>
             </div>
         </section>
+        <div id="mensagem-erro" role="alert" class="erro-escondido" style="display: none; color: white; background-color: black; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <strong>Erro:</strong>
+            <span id="texto-erro"></span>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
